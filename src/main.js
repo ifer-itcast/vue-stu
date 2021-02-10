@@ -3,6 +3,9 @@ import App from './App.vue'
 import router from './router'
 
 import './plugins/element'
+import Button from './components/Button.vue'
+
+Vue.component(Button.name, Button)
 
 Vue.config.productionTip = false
 
