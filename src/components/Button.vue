@@ -4,6 +4,7 @@
     class="el-button"
     :disabled="disabled || loading"
     :autofocus="autofocus"
+    :type="nativeType"
     :class="[
       type ? `el-button--${type}` : '',
       size ? `el-button--${size}` : '',
@@ -61,6 +62,10 @@ export default {
     autofocus: {
       type: Boolean,
       default: false
+    },
+    nativeType: {
+      type: String,
+      default: 'button'
     }
   }
 }
